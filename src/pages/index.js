@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Home() {
+const Home = () => {
   return (
     <div style={{ color: 'purple' }}>
       <h1>Hello Gatsby!</h1>
@@ -9,3 +9,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home;
