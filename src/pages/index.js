@@ -8,5 +8,5 @@ const Home = () => {
       <img src='https://source.unsplash.com/random/400x200' />
     </div>
   );
-}
+};
 export default Home;
