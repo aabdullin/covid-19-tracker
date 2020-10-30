@@ -1,7 +1,7 @@
 {
-  "name": "rei-calc",
+  "name": "covid-19",
   "private": true,
-  "description": "Real estate investment calculator",
+  "description": "COVID-19 Tracker",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -26,9 +26,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aabdullin/rei-calc"
+    "url": "https://github.com/aabdullin/covid-19-tracker"
   },
   "bugs": {
-    "url": "https://github.com/aabdullin/rei-calc/issues"
+    "url": "https://github.com/aabdullin/covid-19-tracker/issues"
   }
 }
