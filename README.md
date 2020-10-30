@@ -1,4 +1,3 @@
-**Real Estate Investment Calculator.**
+**Covid-19 Tracker.**
 
-    Know the return on cash invested for any rental property.
-    Analyze the value of purchasing an investment property or renting your home or condo with the calculator below.
+    View the latest accurate statistics of confirmed cases and location of outbreaks for the Covid-19 Pandemic
