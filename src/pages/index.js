@@ -1,5 +1,7 @@
 import React from 'react';
-import '../bootstrap-4.5.3-dist/css/bootstrap.css';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => (
   <div style={{ color: 'purple' }}>
