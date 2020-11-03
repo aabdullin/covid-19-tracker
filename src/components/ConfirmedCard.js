@@ -1,17 +1,19 @@
-import React from 'react'
+import React from 'react';
+import useAxios from 'axios-hooks'
+import Axios from 'axios'
 
 
-class ConfirmedCard extends React.Component {
-    render() {
-        return (
-            <div id="cases_confirmed">
-                <button onClick={refetch}>refetch</button>
-                <a>Confirmed:</a>
-                <pre>{JSON.stringify(confirmed, null, 2)}</pre>
-            </div>
-        )
-    }
-}
 
+const ConfirmedCard = () => {
+  const { data, loading} = useAxios(
+    'https://covid19.mathdro.id/api/?confirmed?value'
+  )  
+  
+  return (
+      <div id='cases_confirmed'>
+        <pre>{JSON.stringify(data, null, 2)}</pre>
+      </div>
+    );
+  }
 
-export default Confirmed;
+export default ConfirmedCard;
