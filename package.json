@@ -7,7 +7,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "start": "npm run develop",
@@ -16,13 +15,16 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "bootstrap": "4.5.3",
     "gatsby": "2.24.66",
     "gatsby-cli": "2.12.102",
+    "jquery": "3.5.1",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "popper.js": "1.16.1"
   },
   "devDependencies": {
-    "@edwmurph/eslint-config": "0.0.8"
+    "@edwmurph/eslint-config": "0.0.11"
   },
   "repository": {
     "type": "git",
