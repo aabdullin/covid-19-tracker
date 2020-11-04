@@ -1,8 +1,7 @@
 import React from 'react';
 import useAxios from 'axios-hooks';
-import Axios from 'axios';
 
-function Cards(props) {
+const Cards = () => {
   const [{ data, loading, error }] = useAxios('https://covid19.mathdro.id/api');
 
   if (loading) return <p>Loading...</p>;
@@ -18,6 +17,6 @@ function Cards(props) {
       <pre>{JSON.stringify(data.deaths.value, null, 2)}</pre>
     </div>
   );
-}
+};
 
 export default Cards;
