@@ -1,7 +1,10 @@
 import React from 'react';
+import Cards from './Cards'
+import useAxios from 'axios-hooks'
 
 
 const Index = () => (
+  
   <main className='container'>
     <div id='root'>
       <h1>COVID-19 Tracker</h1>
@@ -11,10 +14,7 @@ const Index = () => (
       <h1>Global Cases</h1>
     </div>
     <div id='cases_apis'>
-      <h1>Confirmed:</h1>
-      <ConfirmedCard/>
-      <div id='cases_confirmed'>
-      </div>
+      <Cards/>
       <div id='cases_recovered'>
         <h1>Recovered:</h1>
       </div>
