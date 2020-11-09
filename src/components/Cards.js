@@ -1,8 +1,13 @@
 import React from 'react';
 import useAxios from 'axios-hooks';
+import Card from '../components/Card'
 
 const Cards = () => {
   const [{ data, loading, error }] = useAxios('https://covid19.mathdro.id/api');
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error!</p>;
+
   const confirmedVal = JSON.stringify(data.confirmed.value, null, 2);
   const recoveredVal = JSON.stringify(data.recovered.value, null, 2);
   const deathVal = JSON.stringify(data.deaths.value, null, 2);
@@ -14,9 +19,6 @@ const Cards = () => {
       <Card value={deathVal} class='badge badge-danger' name='Deaths'> </Card>
     </div>
   );
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
 };
 
 export default Cards;
