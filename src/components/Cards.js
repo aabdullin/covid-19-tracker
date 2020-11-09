@@ -1,6 +1,5 @@
 import React from 'react';
 import useAxios from 'axios-hooks';
-import Card from './Card';
 
 const Cards = () => {
   const [{ data, loading, error }] = useAxios('https://covid19.mathdro.id/api');
@@ -25,9 +24,6 @@ const Cards = () => {
 
 export default Cards;
 
-
-
-
-      // <Card value={confirmedVal} class='badge badge-warning' name='Confirmed'> </Card>
-      // <Card value={recoveredVal} class='badge badge-success' name='Recovered'> </Card>
-      // <Card value={deathVal} class='badge badge-danger' name='Deaths'> </Card>
+// <Card value={confirmedVal} class='badge badge-warning' name='Confirmed'> </Card>
+// <Card value={recoveredVal} class='badge badge-success' name='Recovered'> </Card>
+// <Card value={deathVal} class='badge badge-danger' name='Deaths'> </Card>
