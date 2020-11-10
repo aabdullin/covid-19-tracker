@@ -1,10 +1,10 @@
 import React from 'react';
+import moment from 'moment';
 import Cards from '../components/Cards';
 import Rotate from '../components/RotateImage';
-import moment from 'moment';
-import Wrapper from '../components/WrapperComponent'
+import Wrapper from '../components/WrapperComponent';
 
-var dateAndTime= moment().format("DD/MM/YYYY HH:mm")
+const dateAndTime = moment().format('DD/MM/YYYY HH:mm');
 
 const Index = () => (
   <main id='container'>
@@ -14,15 +14,15 @@ const Index = () => (
       <a id='text-muted' href='https://github.com/mathdroid/covid-19-api'>Data via Mathdroids COVID-19 API</a>
     </div>
     <Wrapper>
-    <div id='global_cases'>
-      <h1>Global Cases</h1>
-      Last updated: {dateAndTime}
-    </div>
-    <div id='cases_apis'>
-      <Cards/>
-    </div>
+      <div id='global_cases'>
+        <h1>Global Cases</h1>
+        Last updated: {dateAndTime}
+      </div>
+      <div id='cases_apis'>
+        <Cards/>
+      </div>
     </Wrapper>
   </main>
 );
 
-export default Index;
+export default Index;

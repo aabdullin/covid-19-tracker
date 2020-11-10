@@ -1,7 +1,6 @@
 import React from 'react';
 import useAxios from 'axios-hooks';
-import Card from '../components/Card'
-import Wrapper from '../components/WrapperComponent'
+import Card from './Card';
 
 const Cards = () => {
   const [{ data, loading, error }] = useAxios('https://covid19.mathdro.id/api');
@@ -14,7 +13,7 @@ const Cards = () => {
   const deathVal = JSON.stringify(data.deaths.value, null, 2);
 
   return (
-    <div class="d-flex flex-row">
+    <div className='d-flex flex-row'>
       <Card value={confirmedVal} class='badge badge-warning' name='Confirmed'> </Card>
       <Card value={recoveredVal} class='badge badge-success' name='Recovered'> </Card>
       <Card value={deathVal} class='badge badge-danger' name='Deaths'> </Card>
