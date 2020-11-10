@@ -8,9 +8,9 @@ const Cards = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
 
-  const confirmedVal = JSON.stringify(data.confirmed.value, null, 2);
-  const recoveredVal = JSON.stringify(data.recovered.value, null, 2);
-  const deathVal = JSON.stringify(data.deaths.value, null, 2);
+  const confirmedVal = data.confirmed.value;
+  const recoveredVal = data.recovered.value;
+  const deathVal = data.deaths.value;
 
   return (
     <div className='d-flex flex-row'>

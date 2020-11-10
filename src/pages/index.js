@@ -1,10 +1,11 @@
 import React from 'react';
-import moment from 'moment';
+import useAxios from 'axios-hooks';
 import Cards from '../components/Cards';
 import Rotate from '../components/RotateImage';
 import Wrapper from '../components/WrapperComponent';
 
-const dateAndTime = moment().format('DD/MM/YYYY HH:mm');
+const [{ data }] = useAxios('https://covid19.mathdro.id/api');
+const dateAndTime = data.lastUpdate.value;
 
 const Index = () => (
   <main id='container'>
