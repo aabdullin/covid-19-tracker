@@ -2,10 +2,12 @@ import React from 'react';
 
 const Card = (props) => {
   return (
-    <div className='d-inline-flex p-2'>
-      <pre>{props.value}</pre>
-      <span className={props.class}>{props.name}</span>
-    </div>
+    <span class="border">
+      <div className='p-2'>
+          {props.value.toLocaleString()} 
+          <span className={props.class}>{props.name}</span>
+      </div>
+    </span>
   );
 };
 
